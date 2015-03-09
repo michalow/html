@@ -1,0 +1,196 @@
+body {
+  background: white;
+  font: 12px/18px "Heveltica", Verdana, sans-serif;
+  color:black;
+}
+/*a:link{
+  color:gray;
+  text-decoration:none;
+}
+a:hover{
+  color:gray;
+  text-decoration:underline;
+}
+a:visited{
+  color:black;
+}
+*/
+h1 {
+  font-size: 2em;
+  margin-bottom: 12px;
+  padding: 24px 0;
+  color: black;
+}
+ 
+}
+h2 {
+  font-size: 1.25em;
+  color: black;
+  padding: 2.5% 0;
+}
+ 
+#page {    
+  margin:auto;
+  background: #fff;    
+  text-align: left;    
+}    
+
+/* ------------- HEADER --------------- */
+
+header {
+  background: black;
+}
+
+#logo>h1
+{
+  font-family: Papyrus;
+  color: #99CC33;
+  font-size: 3em;
+}
+
+#drapeau input
+  {   
+    margin:0px;
+    margin-bottom:6px;
+    width: 30px;
+    height:20px;  
+    border: 1px solid black;
+    font-size: 0;
+    float: right;
+  }
+
+#fr
+  {
+    background-image:url("../image/drapeaux/flag_fr.png");
+    background-size: 30px 20px;
+    color:white;
+  }
+#en
+  {
+    background-image:url("../image/drapeaux/flag_en.png");
+    background-size: 30px 20px;
+    color:white;
+  }
+#pl
+  {
+    background-image:url("../image/drapeaux/flag_pl.png");
+    background-size: 30px 20px;
+    color:white;
+  }
+
+#slideshow
+{
+  background: url("../image/slideshow/11.2006 039.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: inline-block;
+}
+
+#barre_nav {
+  position: relative;
+  width: 100%;
+  height: 4em;
+  padding: 0;
+  background-color: black;
+}
+
+#barre_nav li {
+  float: left;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: white;
+  list-style-type: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#barre_nav li a 
+{
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: ;
+  padding-left: 67px;
+  padding-right: 67px;
+}
+
+
+/*sous menu*/
+#barre_nav ul#categorie_nav {
+position: absolute;
+width: 100%
+left: 0;
+height: em;
+padding: 0;
+display:none;
+}
+
+#barre_nav li:hover ul#categorie_nav { 
+display: block;
+top: 3em;
+}
+
+#barre_nav ul#categorie_nav li {
+border: 0;
+}
+
+#barre_nav ul#categorie_nav li a {
+display: block;
+padding: 10px 0.5em 0.5em 10px;
+padding-top: .5em;
+border: 0;
+background-color: #fff;
+color: #000;
+font: normal normal 1em/110% Verdana, Arial, sans-serif;
+}
+
+#barre_nav ul#categorie_nav li:hover a {
+background-color: white;
+font-weight: bold;
+}
+
+
+/* ------------- SECTION ------------- */
+
+section#primaire, section#secondaire {  
+  margin: 2.5%;
+  -webkit-hyphens : auto;
+  -moz-hyphens : auto;
+  -ms-hyphens : auto;
+  hyphens : auto;   
+}
+#primaire h1 {
+  font-size:200%;
+} 
+#primaire p {    
+  padding-bottom: 1.25%;
+}    
+#primaire img {
+  padding: .3125%;    
+  border: 3px solid #eee;  
+}
+#secondaire p {    
+  padding-bottom: 2.5%;    
+}    
+
+
+/* ------------ FOOTER ----------- */
+
+footer {
+  background-color: black;
+  color: white;
+}
+footer a {
+  color:white;
+  text-decoration:none;
+}
+footer a:hover {
+  color: white;
+}
+footer a:visited{
+  color:#C5BA4F;
+  text-decoration:none;
+}

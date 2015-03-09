@@ -1,0 +1,49 @@
+/* CSS spécifique aux laptops */
+
+#page { 
+  min-width: 960px;
+	width:80%;
+	max-width: 1200px;
+}
+
+header {
+  height:142px;
+  font-size:1em;
+}
+
+/*nav {
+  font-size:1em;
+}
+nav ul {
+  padding-top: px;
+}
+*/
+section#primaire {    
+  float: right;   
+  width:75%; 
+}
+#primaire img {    
+  float: left;
+  width:55%;
+  margin:1.25%;  
+}
+#primaire .lien-alt1, #secondaire .lien-alt2 {
+  display:none;
+}
+section#secondaire {
+  float: left;
+  width:15%;  
+}
+#primaire .article ~ .article, #primaire h2 ~ h2,
+#secondaire h3, #secondaire p {
+  display:block;
+}
+footer {
+  clear: both;
+  height: 142px;
+  font-size:1.3em;
+}
+footer p {
+  padding-top: 72px;
+  padding-left: 24px;
+}
