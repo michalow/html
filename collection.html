@@ -2,53 +2,127 @@
 <html lang="fr">
 
 	<head>
-  		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   		<title>Projet tuteuré 2014-2015</title>
 
-	  	<link rel="stylesheet" (type="text/css") href="reset.css" media="all"???>
-	  	<link rel="stylesheet" type="text/css" href="style.css">
+	  	<link rel="stylesheet" type="text/css" href="reset.css" media="all" />
+	  	<link rel="stylesheet" type="text/css" href="base.css" media="all" />
+
+	  	<link rel="stylesheet" media="screen and (min-width:960px)" href="laptop.css" />
+		<link rel="stylesheet" media="screen and (min-width:640px) and (max-width:959px)" href="tablette.css" />
+		<link rel="stylesheet" media="screen and (min-width:240px) and (max-width:639px)" href="smartphone.css" />
 	  	
-	  	<script src="script.js"></script> 
+	  	<script src=".js"></script> 
 	</head>
+
+<!-- ::::::::: BODY + HEADER :::::::::: -->
 
 	<body>
 
-		<section>
-			<article>
+			<header>
+
+				<nav>
+					<ul id="barre_nav">
+						<li><a href='accueil.html'>Accueil</a></li>
+						<li><a href='collection.html'>Collection</a>
+							<ul id="categorie_nav">
+								<li><a href='colubride.html'>Colubridé</a>
+									<ul id="colubride_nav">
+										<li><a href='serpentBles.html'>Serpent des blés</a></li>
+										<li><a href='heterodon.html'>Heterodon</a></li>
+										<li><a href='lait.html'>Serpent de lait</a></li>
+									</ul>
+								</li>
+								<li><a href=''>Python</a>
+									<ul id="python_nav">
+										<li><a href='royal.html'>Python royal</a></li>
+										<li><a href='reticule.html'>Python réticulé</a></li>
+										<li><a href='curtus.html'>Python curtus</a></li>
+										<li><a href='ramsay.html'>Python de Ramsay</a></li>
+									</ul>
+								</li>
+								<li><a href='boa.html'>Boa</a></li>
+								<li><a href='varan.html'>Varan</a></li>
+							</ul>
+						</li>
+						<li><a href='disponibilite.html'>Disponibilité</a></li>
+						<li><a href='projet.html'>Projet</a></li>
+						<li><a href='info.html'>Infos pratiques</a></li>
+						<li><a href='contact.html'>Contact</a></li>
+						<!-- index.php#contactancre -->
+					</ul>
+				</nav>
+
+				<div id="drapeau">
+	    			<form method='post'>
+	        			<input type='submit' id='fr' name='langue' value='fr' />
+	        			<input type='submit' id='en' name='langue' value='en' />
+	        			<input type='submit' id='pl' name='langue' value='pl' />
+	    			</form>
+				</div>
+
+				<div id="logo">
+		 			<h1>JungleCave</h1>
+				</div>
+
+				<!-- <div id="moteur"> -->
+		 			<!-- <input type='texte' /> -->
+		 			<!-- <input type='submit' id='search' name='search' value='ok' /> -->
+				<!-- </div> -->	
+			</header>
+
+
+		<section class="column">
+			<article id="column_1">
 				<h1>Colubridé</h1>
-					<a href="#"><img src="images/.jpg" alt="serpent des blés"/></a>
+					<a href="#"><img src="../image/collection/bles_recadrage_200.jpg" alt="serpent des blés"/></a>
 						<h2>Serpent des blés</h2>
-					<a href="#"><img src="images/.jpg" alt="heterodon"/></a>
+					<a href="#"><img src="../image/collection/heterod2_200.jpg"/></a>
 						<h2>Heterodon</h2>
-					<a href="#"><img src="images/.jpg" alt=""/></a>
-						<h2></h2>
+					<a href="#"><img src="../image/collection/nelsoni_200.jpg" alt=""/></a>
+						<h2>Serpent de lait</h2>
+				<h1>Divers</h1>
+					<a href="#"><img src="../image/collection/anaconda3.jpg" alt="boa"/></a>
+						<h2>Anaconda Verte</h2>		
+			</article>
+			<article id="column_2">
 				<h1>Python</h1>
-					<a href="#"><img src="images/.jpg" alt="python royal"/></a>
+					<a href="#"><img src="../image/collection/royal_200.jpg" alt="python royal"/></a>
 						<h2>Python royal</h2>
-					<a href="#"><img src="images/.jpg" alt="python réticulé"/></a>
+					<a href="#"><img src="../image/collection/recticulus_200.jpg" alt="python réticulé"/></a>
 						<h2>Python réticulé</h2>
-					<a href="#"><img src="images/.jpg" alt="python sanguin"/></a>
+					<a href="#"><img src="../image/collection/curtus2.jpg" alt="python sanguin"/></a>
 						<h2>Python sanguin</h2>
-				<h1>Boa</h1>
-					<a href="#"><img src="images/.jpg" alt="boa"/></a>
-						<h2>Anaconda Verte</h2>
 				<h1>Varan</h1>
-					<a href="#"><img src="images/.jpg" alt="varan mertensi"/></a>
+					<a href="#"><img src="../image/collection/varan2.jpg" alt="varan mertensi"/></a>
 						<h2>Varan mertensi</h2>
 			</article>
 		
+		</section>
+
 			<aside>
 				<h1>Projet d'élevage</h1>
 				<h2></h2>
 					<article></article>
 			</aside>
 
-		</section>
+<!-- ::::::::: FOOTER :::::::::: -->
+		
+			<footer>
+				<div id="petit_logo">JungleCave</div>
 
-		<footer>
+				<div id="copyright">
+					<span>Copyright © <a id="annee" href="choixtable.php">2015</a> Natalia Michalowska - Tous droits réservés</span>
+				</div>
 
-		</footer>
+				<div id="legal">
+					<a href=".php" id="mentions">Mentions légals</a>
+					 | 
+					<a href=".php" id="cgu">Conditions générales d'utilisations</a>
+				</div>
+			</footer>
+		
 	</body>
 </html>

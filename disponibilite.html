@@ -2,32 +2,99 @@
 <html lang="fr">
 
 	<head>
-  		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   		<title>Projet tuteuré 2014-2015</title>
 
-	  	<link rel="stylesheet" (type="text/css") href="reset.css" media="all"???>
-	  	<link rel="stylesheet" type="text/css" href="style.css">
+	  	<link rel="stylesheet" type="text/css" href="reset.css" media="all" />
+	  	<link rel="stylesheet" type="text/css" href="base.css" media="all" />
+
+	  	<link rel="stylesheet" media="screen and (min-width:960px)" href="laptop.css" />
+		<link rel="stylesheet" media="screen and (min-width:640px) and (max-width:959px)" href="tablette.css" />
+		<link rel="stylesheet" media="screen and (min-width:240px) and (max-width:639px)" href="smartphone.css" />
 	  	
-	  	<script src="script.js"></script> 
+	  	<script src=".js"></script> 
 	</head>
 
 	<body>
 
+			<header>
+
+				<nav>
+					<ul id="barre_nav">
+						<li><a href='accueil.html'>Accueil</a></li>
+						<li><a href='collection.html'>Collection</a>
+							<ul id="categorie_nav">
+								<li><a href='colubride.html'>Colubridé</a>
+									<ul id="colubride_nav">
+										<li><a href='serpentBles.html'>Serpent des blés</a></li>
+										<li><a href='heterodon.html'>Heterodon</a></li>
+										<li><a href='lait.html'>Serpent de lait</a></li>
+									</ul>
+								</li>
+								<li><a href=''>Python</a>
+									<ul id="python_nav">
+										<li><a href='royal.html'>Python royal</a></li>
+										<li><a href='reticule.html'>Python réticulé</a></li>
+										<li><a href='curtus.html'>Python curtus</a></li>
+										<li><a href='ramsay.html'>Python de Ramsay</a></li>
+									</ul>
+								</li>
+								<li><a href='boa.html'>Boa</a></li>
+								<li><a href='varan.html'>Varan</a></li>
+							</ul>
+						</li>
+						<li><a href='disponibilite.html'>Disponibilité</a></li>
+						<li><a href='projet.html'>Projet</a></li>
+						<li><a href='info.html'>Infos pratiques</a></li>
+						<li><a href='contact.html'>Contact</a></li>
+						<!-- index.php#contactancre -->
+					</ul>
+				</nav>
+
+				<div id="drapeau">
+	    			<form method='post'>
+	        			<input type='submit' id='fr' name='langue' value='fr' />
+	        			<input type='submit' id='en' name='langue' value='en' />
+	        			<input type='submit' id='pl' name='langue' value='pl' />
+	    			</form>
+				</div>
+
+				<div id="logo">
+		 			<h1>JungleCave</h1>
+				</div>
+
+				<!-- <div id="moteur"> -->
+		 			<!-- <input type='texte' /> -->
+		 			<!-- <input type='submit' id='search' name='search' value='ok' /> -->
+				<!-- </div> -->	
+			</header>
+
 		<section>
 			<article>
 				<h1>Reptiles disponibles à la vente</h1>
-					<img src="" alt="" id="petite_photo"/>
+					<div id="miniatures">
+						<img src="../image/disponibilite/varan7_css.jpg" alt="petit varan" class="petite_photo"/>
+						<img src="../image/disponibilite/varan6_css.jpg" alt="petit varan" class="petite_photo"/>
+						<img src="../image/disponibilite/varan5_css.jpg" alt="petit varan" class="petite_photo"/>
+						<img src="../image/disponibilite/varan4_css.jpg" alt="petit varan" class="petite_photo"/>
+						<img src="../image/disponibilite/varan8_150.jpg" alt="petit varan" class="petite_photo"/>
+					</div>
 <!-- petite photos visible en cliquant - galerie de photos en javascript -->
-					<img src="" alt="" id="grande_photo"/>
+					<div id="grande">
+						<img src="../image/disponibilite/varan7_big.jpg" alt="photo zoome" class="grande_photo"/>
+						<!-- <img src="../image/disponibilite/varan7_big.jpg" alt="photo zoome" class="grande_photo"/> -->
+					</div>
 <!-- grande photo visible en cliquant -->
-						<h2></h2>
+						<h2>Varan de Mertens</h2>
 <!-- h1 h2 comment utiliser -->
 <!-- une première image ; slideshow le reste géré par javascript -->
-					<p></p>
-					<span>Tarif : €</span>
-					<input type="submit" value="Ajout au panier"/>
+					<div id="prix">
+						<p>Le Varan de Mertens, Varanus mertensi, vient de l'Australie du Nord. Cet espèce se sent bien à l'eau, grâce aux sa longue queue et ses narines haut situées qui peuvent se fermer de façon étanche si besoin il s'est adapté dans l'environnement ?marine.</p>
+						<span>Tarif : €</span>
+						<input type="submit" value="Ajout au panier"/>
+					</div>
 <!-- le bouton à completer -->
 			</article>
 			<aside>
@@ -35,8 +102,19 @@
 
 		</section>
 
-		<footer>
+			<footer>
+				<div id="petit_logo">JungleCave</div>
 
-		</footer>
+				<div id="copyright">
+					<span>Copyright © <a id="annee" href="choixtable.php">2015</a> Natalia Michalowska - Tous droits réservés</span>
+				</div>
+
+				<div id="legal">
+					<a href=".php" id="mentions">Mentions légals</a>
+					 | 
+					<a href=".php" id="cgu">Conditions générales d'utilisations</a>
+				</div>
+			</footer>
+		
 	</body>
 </html>
