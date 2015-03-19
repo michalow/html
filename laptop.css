@@ -11,6 +11,32 @@ header {
   font-size:1em;
 }
 
+section#apropos {    
+  float: right;   
+  width:75%; 
+}
+
+/*#apropos img {    
+  float: left;
+  width:55%;
+  margin:1.25%;  
+}*/
+
+/*#apropos .lien-alt1, #secondaire .lien-alt2 {
+  display:none;
+}*/
+
+section#aside {
+  float: left;
+  width:15%;  
+}
+
+/*#primaire .article ~ .article, #primaire h2 ~ h2,
+#secondaire h3, #secondaire p {
+  display:block;
+}*/
+
+
 footer {
   clear: both;
   font-size:.4em;
