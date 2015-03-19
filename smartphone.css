@@ -14,13 +14,6 @@ header {
   font-size:.6em;
 }
 
-#drapeau
-{
-  position: relative;
-  top: -290px;
-}
-
-
 nav {
   float: left;
 }
@@ -28,15 +21,21 @@ nav {
 #barre_nav>li>a {
   display: block;
 }
+
 #barre_nav>li {
   font-size:1.5em;
   width: 100%;
 }
 
+#logo>h1{
+  font-size: 2em;
+}
 
 #img_circle, #img_circle1, #img_circle2
 {
   float: none;
+  height: 12em;
+  width: auto;
 }
 
 
